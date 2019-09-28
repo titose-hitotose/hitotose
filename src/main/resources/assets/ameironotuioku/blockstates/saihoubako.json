@@ -1,0 +1,8 @@
+{
+    "variants": {
+        "facing=north": { "model": "ameironotuioku:saihoubako"},
+        "facing=south": { "model": "ameironotuioku:saihoubako", "y": 180},
+        "facing=west":  { "model": "ameironotuioku:saihoubako", "y": 270},
+        "facing=east":  { "model": "ameironotuioku:saihoubako", "y": 90}
+    }
+}

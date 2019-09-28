@@ -1,0 +1,6 @@
+{
+    "variants": {
+        "normal": { "model": "gakubuti01" },
+        "map":    { "model": "gakubuti01_map" }
+    }
+}
