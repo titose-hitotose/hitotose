@@ -34,10 +34,13 @@ public class Gakubuti01 extends EntityItemFrame{
 	    /** Chance for this item frame's item to drop from the frame. */
 	    private float itemDropChance = 1.0F;
 
-	    public Gakubuti01(World worldIn)
-	    {
-	        super(worldIn);
-	    }
+
+	    	public Gakubuti01(World worldIn) {
+	            super(worldIn);
+	            facingDirection = EnumFacing.EAST;
+	        }
+
+
 
 	    public Gakubuti01(World worldIn, BlockPos p_i45852_2_, EnumFacing p_i45852_3_)
 	    {

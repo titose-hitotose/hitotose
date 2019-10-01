@@ -1,0 +1,8 @@
+{
+    "variants": {
+        "facing=north": { "model": "ameironotuioku:pen02"},
+        "facing=south": { "model": "ameironotuioku:pen02", "y": 180},
+        "facing=west":  { "model": "ameironotuioku:pen02", "y": 270},
+        "facing=east":  { "model": "ameironotuioku:pen02", "y": 90}
+    }
+}

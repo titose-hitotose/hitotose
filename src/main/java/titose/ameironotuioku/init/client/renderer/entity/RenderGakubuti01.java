@@ -14,6 +14,7 @@ import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.client.renderer.entity.RenderItemFrame;
 import net.minecraft.client.renderer.entity.RenderManager;
 import net.minecraft.client.renderer.texture.TextureMap;
+import net.minecraft.entity.item.EntityItemFrame;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.math.BlockPos;
@@ -24,8 +25,8 @@ public class RenderGakubuti01 extends RenderItemFrame{
 
 	 private static final ResourceLocation MAP_BACKGROUND_TEXTURES = new ResourceLocation("textures/map/map_background.png");
 	    private final Minecraft mc = Minecraft.getMinecraft();
-	    private final ModelResourceLocation itemFrameModel = new ModelResourceLocation("gakubuti01", "normal");
-	    private final ModelResourceLocation mapModel = new ModelResourceLocation("gakubuti01_map", "map");
+	    private final ModelResourceLocation itemFrameModel = new ModelResourceLocation("ameironotuioku:gakubuti01", "normal");
+	    private final ModelResourceLocation mapModel = new ModelResourceLocation("ameironotuioku:gakubuti01_map", "map");
 	    private final RenderItem itemRenderer;
 
 	    public RenderGakubuti01(RenderManager renderManagerIn, RenderItem itemRendererIn)
@@ -33,6 +34,11 @@ public class RenderGakubuti01 extends RenderItemFrame{
 	        super(renderManagerIn, itemRendererIn);
 	        this.itemRenderer = itemRendererIn;
 	    }
+
+	    public void doRender(EntityItemFrame entity, double x, double y, double z, float entityYaw, float partialTicks) {
+	        this.doRender((Gakubuti01) entity, x, y, z, entityYaw, partialTicks);
+	    }
+
 
 	    public void doRender(Gakubuti01 entity, double x, double y, double z, float entityYaw, float partialTicks)
 	    {

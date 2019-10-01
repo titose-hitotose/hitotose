@@ -4,9 +4,9 @@ import net.minecraft.client.Minecraft;
 import net.minecraft.entity.Entity;
 import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.client.event.ModelRegistryEvent;
+import net.minecraftforge.fml.client.registry.IRenderFactory;
 import net.minecraftforge.fml.client.registry.RenderingRegistry;
 import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import net.minecraftforge.fml.common.registry.EntityRegistry;
 import net.minecraftforge.fml.relauncher.Side;
@@ -26,17 +26,16 @@ public class ClientProxy extends CommonProxy{
 
 	/* エンティティの登録、コンフィグ読込など
 	* Register Entity and Config. */
+	@SuppressWarnings({ "unchecked", "rawtypes" })
 	@Override
 	public void preInit() {
 		 EntityRegistry.registerModEntity(new ResourceLocation( Reference.MOD_ID, "entity_seat"), EntitySeat.class,"entity_seat", 0,  AmeiroNoTuioku.instance, 128,5, false);
 		 EntityRegistry.registerModEntity(new ResourceLocation( Reference.MOD_ID, "gakubuti01"), Gakubuti01.class,"gakubuti01",1,  AmeiroNoTuioku.instance, 256,64, false);
+
+		 RenderingRegistry.registerEntityRenderingHandler(Gakubuti01.class, (IRenderFactory) manager -> new RenderGakubuti01(manager, Minecraft.getMinecraft().getRenderItem()));
+
 	}
-	@SuppressWarnings("deprecation")
-	public void preInitClient(FMLPreInitializationEvent event)
-    {
-		super.preInit();
-        RenderingRegistry.registerEntityRenderingHandler(Gakubuti01.class, new RenderGakubuti01(null, null));
-	}
+
 
 
 	/* レシピ・鉱石などの追加 Register Recipe and Ore. */

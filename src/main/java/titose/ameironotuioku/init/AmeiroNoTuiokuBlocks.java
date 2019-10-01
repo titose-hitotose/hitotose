@@ -19,11 +19,13 @@ import titose.ameironotuioku.init.blocks.Fuku01;
 import titose.ameironotuioku.init.blocks.Fuku02;
 import titose.ameironotuioku.init.blocks.Fuku03;
 import titose.ameironotuioku.init.blocks.Gaarand01;
+import titose.ameironotuioku.init.blocks.Gakubuti01;
 import titose.ameironotuioku.init.blocks.Gakubuti_block01;
 import titose.ameironotuioku.init.blocks.Haabariumu01;
 import titose.ameironotuioku.init.blocks.Haabariumu02;
 import titose.ameironotuioku.init.blocks.Isu01;
 import titose.ameironotuioku.init.blocks.Isu02;
+import titose.ameironotuioku.init.blocks.Isu03;
 import titose.ameironotuioku.init.blocks.Kazaridana01;
 import titose.ameironotuioku.init.blocks.Kusari01;
 import titose.ameironotuioku.init.blocks.Lamp02;
@@ -31,8 +33,11 @@ import titose.ameironotuioku.init.blocks.Lamp03;
 import titose.ameironotuioku.init.blocks.Lamp04;
 import titose.ameironotuioku.init.blocks.Misinn01;
 import titose.ameironotuioku.init.blocks.Misinn02;
+import titose.ameironotuioku.init.blocks.Mobiiru01;
 import titose.ameironotuioku.init.blocks.Nagatukue01;
 import titose.ameironotuioku.init.blocks.Orugooru01;
+import titose.ameironotuioku.init.blocks.Pen01;
+import titose.ameironotuioku.init.blocks.Pen02;
 import titose.ameironotuioku.init.blocks.Pumpkin01;
 import titose.ameironotuioku.init.blocks.Pumpkin02;
 import titose.ameironotuioku.init.blocks.Saihoubako;
@@ -75,6 +80,15 @@ public class AmeiroNoTuiokuBlocks {
     public static Block misinn02;
     public static Block byuro01;
     public static Block dream03;
+    public static Block isu03;
+    public static Block mobiiru01;
+    public static Block pen01;
+    public static Block pen02;
+    public static Block gakubuti01;
+
+
+
+
 
 
 
@@ -137,6 +151,18 @@ public class AmeiroNoTuiokuBlocks {
     			.setUnlocalizedName("byuro01").setCreativeTab(AmeiroNoTuiokuTabs.syouzyonohakoniwa);
     	dream03 = new Dream03().setRegistryName("dream03")
     			.setUnlocalizedName("dream03").setCreativeTab(AmeiroNoTuiokuTabs.syouzyonohakoniwa);
+    	isu03 = new Isu03().setRegistryName("isu03")
+    			.setUnlocalizedName("isu03").setCreativeTab(AmeiroNoTuiokuTabs.syouzyonohakoniwa);
+    	mobiiru01 = new Mobiiru01().setRegistryName("mobiiru01")
+    			.setUnlocalizedName("mobiiru01").setCreativeTab(AmeiroNoTuiokuTabs.syouzyonohakoniwa);
+    	pen01 = new Pen01().setRegistryName("pen01")
+    			.setUnlocalizedName("pen01").setCreativeTab(AmeiroNoTuiokuTabs.syouzyonohakoniwa);
+    	pen02 = new Pen02().setRegistryName("pen02")
+    			.setUnlocalizedName("pen02").setCreativeTab(AmeiroNoTuiokuTabs.syouzyonohakoniwa);
+    	 gakubuti01 = new Gakubuti01().setRegistryName("gakubuti01")
+         		.setUnlocalizedName("gakubuti01").setCreativeTab(AmeiroNoTuiokuTabs.syouzyonohakoniwa);
+
+
 
 
     }
@@ -172,6 +198,12 @@ public class AmeiroNoTuiokuBlocks {
         registerBlock(misinn02);
         registerBlock(byuro01);
         registerBlock(dream03);
+        registerBlock(isu03);
+        registerBlock(mobiiru01);
+        registerBlock(pen01);
+        registerBlock(pen02);
+        registerBlock(gakubuti01);
+
 
     }
 
@@ -222,6 +254,10 @@ public class AmeiroNoTuiokuBlocks {
         registerRender(misinn02);
         registerRender(byuro01);
         registerRender(dream03);
+        registerRender(isu03);
+        registerRender(mobiiru01);
+        registerRender(pen01);
+        registerRender(pen02);
 
     }
 

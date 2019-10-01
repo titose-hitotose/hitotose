@@ -11,6 +11,7 @@ import net.minecraftforge.client.model.ModelLoader;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
+import titose.ameironotuioku.init.entity.Gakubuti01;
 import titose.ameironotuioku.init.item.ItemHangingEntity;
 import titose.ameironotuioku.main.Reference;
 
@@ -21,10 +22,13 @@ public class AmeiroNoTuiokuItems {
 
 
 
+
 	/* アイテムのインスタンスを生成 Instantiate an item. */
     public static void init() {
-    	 itemhangingentity = new ItemHangingEntity(null).setRegistryName("gakubuti01")
+    	 itemhangingentity = new ItemHangingEntity(Gakubuti01.class).setRegistryName("gakubuti01")
          		.setUnlocalizedName("gakubuti01").setCreativeTab(AmeiroNoTuiokuTabs.syouzyonohakoniwa);
+
+
     }
 
 
@@ -32,6 +36,10 @@ public class AmeiroNoTuiokuItems {
     /* アイテムを登録する、ここから Register Items. From here. ↓*/
     public static void register() {
     	registerItem(itemhangingentity);
+
+
+
+
 
     }
 
@@ -45,6 +53,8 @@ public class AmeiroNoTuiokuItems {
     * Register rendering of Items and ItemBlocks in drop and inventory. From here↓*/
     public static void registerRenders() {
     	registerRender(itemhangingentity);
+
+
 
     }
 
