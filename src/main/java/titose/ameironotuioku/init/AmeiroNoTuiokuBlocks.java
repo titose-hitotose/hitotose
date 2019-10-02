@@ -20,6 +20,7 @@ import titose.ameironotuioku.init.blocks.Fuku01;
 import titose.ameironotuioku.init.blocks.Fuku02;
 import titose.ameironotuioku.init.blocks.Fuku03;
 import titose.ameironotuioku.init.blocks.Gaarand01;
+import titose.ameironotuioku.init.blocks.Gakubuti01;
 import titose.ameironotuioku.init.blocks.Gakubuti_block01;
 import titose.ameironotuioku.init.blocks.Haabariumu01;
 import titose.ameironotuioku.init.blocks.Haabariumu02;
@@ -85,6 +86,7 @@ public class AmeiroNoTuiokuBlocks {
     public static Block pen01;
     public static Block pen02;
     public static Block dressaa01;
+    public static Block gakubuti01;
 
 
 
@@ -162,6 +164,8 @@ public class AmeiroNoTuiokuBlocks {
     			.setUnlocalizedName("pen02").setCreativeTab(AmeiroNoTuiokuTabs.syouzyonohakoniwa);
     	dressaa01 = new Dressaa01().setRegistryName("dressaa01")
     			.setUnlocalizedName("dressaa01").setCreativeTab(AmeiroNoTuiokuTabs.syouzyonohakoniwa);
+    	gakubuti01 = new Gakubuti01().setRegistryName("gakubuti01")
+        		.setUnlocalizedName("gakubuti01").setCreativeTab(AmeiroNoTuiokuTabs.syouzyonohakoniwa);
 
 
 
@@ -171,39 +175,40 @@ public class AmeiroNoTuiokuBlocks {
 
     /* ブロックを登録する、ここから Register Blocks. From here. ↓*/
     public static void register() {
-        registerBlock(gakubuti_block01);
-        registerBlock(pumpkin01);
-        registerBlock(tana01);
-        registerBlock(pumpkin02);
-        registerBlock(isu01);
-        registerBlock(isu02);
-        registerBlock(tokei01);
-        registerBlock(gaarand01);
-        registerBlock(lamp02);
-        registerBlock(kusari01);
-        registerBlock(haabariumu01);
-        registerBlock(lamp03);
-        registerBlock(haabariumu02);
-        registerBlock(fuku02);
-        registerBlock(fuku01);
-        registerBlock(fuku03);
-        registerBlock(saihoubako);
-        registerBlock(taipu01);
-        registerBlock(taipu02);
-        registerBlock(orugooru01);
-        registerBlock(nagatukue01);
-        registerBlock(kazaridana01);
-        registerBlock(tukue01);
-        registerBlock(lamp04);
-        registerBlock(misinn01);
-        registerBlock(misinn02);
-        registerBlock(byuro01);
-        registerBlock(dream03);
-        registerBlock(isu03);
-        registerBlock(mobiiru01);
-        registerBlock(pen01);
-        registerBlock(pen02);
-        registerBlock(dressaa01);
+        registerBlockNotItem(gakubuti_block01);
+        registerBlockNotItem(pumpkin01);
+        registerBlockNotItem(tana01);
+        registerBlockNotItem(pumpkin02);
+        registerBlockNotItem(isu01);
+        registerBlockNotItem(isu02);
+        registerBlockNotItem(tokei01);
+        registerBlockNotItem(gaarand01);
+        registerBlockNotItem(lamp02);
+        registerBlockNotItem(kusari01);
+        registerBlockNotItem(haabariumu01);
+        registerBlockNotItem(lamp03);
+        registerBlockNotItem(haabariumu02);
+        registerBlockNotItem(fuku02);
+        registerBlockNotItem(fuku01);
+        registerBlockNotItem(fuku03);
+        registerBlockNotItem(saihoubako);
+        registerBlockNotItem(taipu01);
+        registerBlockNotItem(taipu02);
+        registerBlockNotItem(orugooru01);
+        registerBlockNotItem(nagatukue01);
+        registerBlockNotItem(kazaridana01);
+        registerBlockNotItem(tukue01);
+        registerBlockNotItem(lamp04);
+        registerBlockNotItem(misinn01);
+        registerBlockNotItem(misinn02);
+        registerBlockNotItem(byuro01);
+        registerBlockNotItem(dream03);
+        registerBlockNotItem(isu03);
+        registerBlockNotItem(mobiiru01);
+        registerBlockNotItem(pen01);
+        registerBlockNotItem(pen02);
+        registerBlockNotItem(dressaa01);
+        registerBlockNotItem(gakubuti01);
 
 
 
@@ -211,17 +216,16 @@ public class AmeiroNoTuiokuBlocks {
 
 
     /** ブロックの登録 Register Blocks. **/
-    public static void registerBlock(Block block) {
-        registerBlock(block, new ItemBlock(block));
+    public static void registerBlockNotItem(Block block) {
+        registerBlockNotItem(block, new ItemBlock(block));
     }
 
     /** アイテムブロックの登録 Register ItemBlocks. **/
-    public static void registerBlock(Block block, ItemBlock item) {
+    public static void registerBlockNotItem(Block block, ItemBlock item) {
         RegistrationHandler.BLOCKS.add(block);
         item.setRegistryName(block.getRegistryName());
-       AmeiroNoTuiokuItems.RegistrationHandler.ITEMS.add(item);
-
     }
+
     /*ここまで So far↑ */
 
 
@@ -261,6 +265,7 @@ public class AmeiroNoTuiokuBlocks {
         registerRender(pen01);
         registerRender(pen02);
         registerRender(dressaa01);
+        registerRender(gakubuti01);
 
 
     }

@@ -25,8 +25,8 @@ public class RenderGakubuti01 extends RenderItemFrame{
 
 	 private static final ResourceLocation MAP_BACKGROUND_TEXTURES = new ResourceLocation("textures/map/map_background.png");
 	    private final Minecraft mc = Minecraft.getMinecraft();
-	    private final ModelResourceLocation itemFrameModel = new ModelResourceLocation("ameironotuioku:gakubuti01", "normal");
-	    private final ModelResourceLocation mapModel = new ModelResourceLocation("ameironotuioku:gakubuti01_map", "map");
+	    private final ModelResourceLocation itemFrameModel = new ModelResourceLocation("ameironotuioku:gakubuti01", "facing=south");
+    private final ModelResourceLocation mapModel = new ModelResourceLocation("ameironotuioku:gakubuti01_map", "map");
 	    private final RenderItem itemRenderer;
 
 	    public RenderGakubuti01(RenderManager renderManagerIn, RenderItem itemRendererIn)
