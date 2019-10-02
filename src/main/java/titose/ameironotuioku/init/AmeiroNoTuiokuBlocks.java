@@ -15,11 +15,11 @@ import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 import titose.ameironotuioku.init.blocks.Byuro01;
 import titose.ameironotuioku.init.blocks.Dream03;
+import titose.ameironotuioku.init.blocks.Dressaa01;
 import titose.ameironotuioku.init.blocks.Fuku01;
 import titose.ameironotuioku.init.blocks.Fuku02;
 import titose.ameironotuioku.init.blocks.Fuku03;
 import titose.ameironotuioku.init.blocks.Gaarand01;
-import titose.ameironotuioku.init.blocks.Gakubuti01;
 import titose.ameironotuioku.init.blocks.Gakubuti_block01;
 import titose.ameironotuioku.init.blocks.Haabariumu01;
 import titose.ameironotuioku.init.blocks.Haabariumu02;
@@ -84,7 +84,8 @@ public class AmeiroNoTuiokuBlocks {
     public static Block mobiiru01;
     public static Block pen01;
     public static Block pen02;
-    public static Block gakubuti01;
+    public static Block dressaa01;
+
 
 
 
@@ -159,8 +160,8 @@ public class AmeiroNoTuiokuBlocks {
     			.setUnlocalizedName("pen01").setCreativeTab(AmeiroNoTuiokuTabs.syouzyonohakoniwa);
     	pen02 = new Pen02().setRegistryName("pen02")
     			.setUnlocalizedName("pen02").setCreativeTab(AmeiroNoTuiokuTabs.syouzyonohakoniwa);
-    	 gakubuti01 = new Gakubuti01().setRegistryName("gakubuti01")
-         		.setUnlocalizedName("gakubuti01").setCreativeTab(AmeiroNoTuiokuTabs.syouzyonohakoniwa);
+    	dressaa01 = new Dressaa01().setRegistryName("dressaa01")
+    			.setUnlocalizedName("dressaa01").setCreativeTab(AmeiroNoTuiokuTabs.syouzyonohakoniwa);
 
 
 
@@ -202,7 +203,8 @@ public class AmeiroNoTuiokuBlocks {
         registerBlock(mobiiru01);
         registerBlock(pen01);
         registerBlock(pen02);
-        registerBlock(gakubuti01);
+        registerBlock(dressaa01);
+
 
 
     }
@@ -258,6 +260,8 @@ public class AmeiroNoTuiokuBlocks {
         registerRender(mobiiru01);
         registerRender(pen01);
         registerRender(pen02);
+        registerRender(dressaa01);
+
 
     }
 

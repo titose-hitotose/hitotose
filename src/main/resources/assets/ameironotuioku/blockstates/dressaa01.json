@@ -1,0 +1,14 @@
+{
+    "variants": {
+
+        "facing=north,open=false": { "model": "ameironotuioku:dressaa02" },
+        "facing=south,open=false": { "model": "ameironotuioku:dressaa02", "y": 180 },
+        "facing=east,open=false": { "model": "ameironotuioku:dressaa02", "y": 90 },
+        "facing=west,open=false": { "model": "ameironotuioku:dressaa02", "y": 270 },
+        "facing=north,open=true": { "model": "ameironotuioku:dressaa01" },
+        "facing=south,open=true": { "model": "ameironotuioku:dressaa01", "y": 180 },
+        "facing=east,open=true": { "model": "ameironotuioku:dressaa01", "y": 90 },
+        "facing=west,open=true": { "model": "ameironotuioku:dressaa01", "y": 270 }
+    }
+}
+

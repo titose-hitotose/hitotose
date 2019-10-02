@@ -77,7 +77,7 @@ public class Gakubuti01 extends Block{
         return BlockRenderLayer.CUTOUT;
     }
 
-	/*atarihanntei*/
+
 
     private static final AxisAlignedBB BOUNDING_BOX_NORTH = CollisionHelper.getBlockBounds(EnumFacing.NORTH, 0.5D,1.0D,1.0D,0.0D,0.0D,0.0D);
 	private static final AxisAlignedBB BOUNDING_BOX_EAST = CollisionHelper.getBlockBounds(EnumFacing.EAST,0.0D,1.0D,0.0D,0.5D,0.0D,1.0D);
